@@ -63,39 +63,6 @@ inquirer
 })
 // TODO: Create a function to write README file
 // function writeToFile(generateMarkdown, data) {
-//     fs.writeFile('./ReadMe', markdown, (error) => {
-//         if (error) {
-//           console.log(error)
-//       }
-//     `# ${data.title}
-
-//   # Table of Contents
-//   -[Description](#description)
-//   -[Installation](#installation)
-//   -[Usage](#usage)
-//   -[Contribution](#contribution)
-//   -[License](#license)
-
-//   ##Description
-//   ${data.description}
-  
-//   ##Installation
-//   ${data.installation}
-  
-//   ##Usage
-//   ${data.usage}
- 
-//   ##License
-//   ${data.license}
-
-//   ##Contribution
-//   ${data.contribution}
-
-//   #Contact
-//   * GitHub: ${data.gitHub}
-//   * Email: ${data.email}
-// `;
-//     })
 // }
 
 // // TODO: Create a function to initialize app
