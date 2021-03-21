@@ -60,7 +60,7 @@ function generateMarkdown(data) {
   ## Contribution
   ${data.contribution}
 
-  # Contact
+  ## Contact
   * GitHub: ${data.gitHub}
   * Email: ${data.email}
 `;
