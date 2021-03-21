@@ -1,27 +1,28 @@
-# testing
+# Readme Generator
 
   # Table of Contents
-  -[Description](#description)
-  -[Installation](#installation)
-  -[Usage](#usage)
-  -[Contribution](#contribution)
-  -[License](#license)
 
-  ##Description
-  test
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contribution](#contribution)
+  * [License](#license)
+
+  ## Description
+  Node.js Readme generator
   
-  ##Installation
+  ## Installation
   undefined
   
-  ##Usage
-  test
+  ## Usage
+  use it
  
-  ##License
+  ## License
   MIT
 
-  ##Contribution
-  test2
+  ## Contribution
+  Me
 
-  #Contact
-  * GitHub: test
-  * Email: test
+  # Contact
+  * GitHub: https://github.com/hrkoren
+  * Email: hrkoren@gmail.com
