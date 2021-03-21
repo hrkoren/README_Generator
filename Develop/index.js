@@ -26,10 +26,10 @@ inquirer
             validate: (value) => {if(value){return true} else {return 'Please enter the parameters for usage.'}},
         },
         {
-            type: 'input',
+            type: 'checkbox',
             message: 'Choose the License Type needed.',
-            choices: ['MIT', 'GNU GPLv3', 'ISC', 'Apache', 'None'],
             name: 'license',
+            choices: ['MIT', 'GNU GPLv3', 'ISC', 'Apache', 'None'],
             validate: (value) => {if(value){return true} else {return 'Please select the most appropriate license.'}},
         },
         {
@@ -50,12 +50,14 @@ inquirer
             name: 'email',
             validate: (value) => {if(value){return true} else {return 'An email address is required.'}},
         }
-    ])
+    ]).then(content => {
+        console.log('./content.json', JSON.stringify(content), () => {});
+    })
 // TODO: Create a function to write README file
 function writeToFile(genMarkdown, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
+// // TODO: Create a function to initialize app
+// function init() {}
 
-// Function call to initialize app
-init();
+// // Function call to initialize app
+// init();
