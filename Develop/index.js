@@ -49,18 +49,54 @@ inquirer
             message: 'Enter your email address.',
             name: 'email',
             validate: (value) => { if (value) { return true } else { return 'An email address is required.' } },
-        }
-    ]).then(generateMarkdown => {
-        console.log('./generateMarkdown.json', JSON.stringify(generateMarkdown), () => { });
-    })
+        },
+    ])
+    .then(data => {
+        const readMeContent = generateMarkdown(data);
+        console.log(data);
+
+        fs.writeFile('ReadMe.md', readMeContent,  (error) => {
+            if (error) {
+              console.log(error)
+          }
+    });
+})
 // TODO: Create a function to write README file
-function writeToFile(generateMarkdown, data) {
-    fs.writeToFile('./generateMarkdown.json', (error) => {
-        if (error) {
-            console.log(error)
-        }
-    })
-}
+// function writeToFile(generateMarkdown, data) {
+//     fs.writeFile('./ReadMe', markdown, (error) => {
+//         if (error) {
+//           console.log(error)
+//       }
+//     `# ${data.title}
+
+//   # Table of Contents
+//   -[Description](#description)
+//   -[Installation](#installation)
+//   -[Usage](#usage)
+//   -[Contribution](#contribution)
+//   -[License](#license)
+
+//   ##Description
+//   ${data.description}
+  
+//   ##Installation
+//   ${data.installation}
+  
+//   ##Usage
+//   ${data.usage}
+ 
+//   ##License
+//   ${data.license}
+
+//   ##Contribution
+//   ${data.contribution}
+
+//   #Contact
+//   * GitHub: ${data.gitHub}
+//   * Email: ${data.email}
+// `;
+//     })
+// }
 
 // // TODO: Create a function to initialize app
 // function init() {}
