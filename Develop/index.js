@@ -30,13 +30,18 @@ inquirer
             message: 'Choose the License Type needed.',
             name: 'license',
             choices: ['MIT', 'GNU GPLv3', 'ISC', 'Apache', 'None'],
-            validate: (value) => { if (value) { return true } else { return 'Please select the most appropriate license.' } },
         },
         {
             type: 'input',
             message: 'Enter the Contributing User Information',
             name: 'contribution',
             validate: (value) => { if (value) { return true } else { return 'Please enter any contribution information.' } },
+        },
+        {
+            type: 'input',
+            message: 'Describe any testing.',
+            name: 'tests',
+            validate: (value) => { if (value) { return true } else { return 'A GitHub username is required.' } },
         },
         {
             type: 'input',
@@ -61,12 +66,16 @@ inquirer
           }
     });
 })
+
 // TODO: Create a function to write README file
-// function writeToFile(generateMarkdown, data) {
+//didn't need this function - writing to file above
+// function writeToFile() {
 // }
 
-// // TODO: Create a function to initialize app
-// function init() {}
+// TODO: Create a function to initialize app
+//Don't need this function, initializing above
+// function init() {
+// }
 
-// // Function call to initialize app
+// Function call to initialize app
 // init();

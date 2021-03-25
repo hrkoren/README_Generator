@@ -1,15 +1,9 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (data.license === 'MIT') {
-    license.license = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`;
-  } else if (data.license === 'Apache') {
-    license = `[![License: Apache](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]`;
-  } else if (data.license === 'GNU GPLv3') {
-    license = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]`;
-  } else if (data.license === 'ISC') {
-    license = `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)]`;
-  } else
+  if (license !== 'None') {
+    return `![License: ${license}](https://img.shields.io/badge/License-${license}-blue.svg)`;
+  } 
     return '';
 }
 renderLicenseBadge;
@@ -17,13 +11,13 @@ renderLicenseBadge;
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-if (data.license === 'MIT') {
+if (license === 'MIT') {
   return `(https://opensource.org/licenses/Apache-2.0)`;
-} else if (data.license === 'Apache') {
+} else if (license === 'Apache') {
   return `(https://opensource.org/licenses/Apache-2.0)`;
-} else if (data.license === 'GNU GPLv3') {
+} else if (license === 'GNU GPLv3') {
   return `(https://www.gnu.org/licenses/gpl-3.0)`;
-} else if (data.license === 'ISC') {
+} else if (license === 'ISC') {
   return `(https://opensource.org/licenses/ISC)`;
 } else
   return '';
@@ -51,6 +45,7 @@ function generateMarkdown(data) {
   * [Usage](#usage)
   * [Contribution](#contribution)
   * [License](#license)
+  * [Tests](#tests)
   * [Questions](#questions)
 
   ## Description
@@ -64,11 +59,14 @@ function generateMarkdown(data) {
  
   ## License
   ${data.license}
-  ${renderLicenseBadge}
-  ${renderLicenseLink}
+  ${renderLicenseBadge(data.license)}
+  ${renderLicenseLink(data.license)}
 
   ## Contribution
   ${data.contribution}
+
+  ## Tests
+
 
   ## Questions? Contact me at:
   * GitHub: ${data.gitHub}
