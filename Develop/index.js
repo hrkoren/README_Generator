@@ -39,9 +39,8 @@ inquirer
         },
         {
             type: 'input',
-            message: 'Describe any testing.',
+            message: 'Describe any testing criteria, if needed.',
             name: 'tests',
-            validate: (value) => { if (value) { return true } else { return 'A GitHub username is required.' } },
         },
         {
             type: 'input',

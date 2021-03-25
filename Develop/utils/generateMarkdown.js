@@ -11,14 +11,8 @@ renderLicenseBadge;
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-if (license === 'MIT') {
-  return `(https://opensource.org/licenses/Apache-2.0)`;
-} else if (license === 'Apache') {
-  return `(https://opensource.org/licenses/Apache-2.0)`;
-} else if (license === 'GNU GPLv3') {
-  return `(https://www.gnu.org/licenses/gpl-3.0)`;
-} else if (license === 'ISC') {
-  return `(https://opensource.org/licenses/ISC)`;
+if (license !== 'None') {
+  return `(https://opensource.org/licenses/${license})`;
 } else
   return '';
 }
@@ -26,12 +20,8 @@ renderLicenseLink;
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
+//Don't need this code; returning in codes above
 // function renderLicenseSection(license) {
-//   fs.writeFile('ReadMe.md', license,  (error) => {
-//     if (error) {
-//       console.log(error)
-// }
-// })
 // }
 
 // TODO: Create a function to generate markdown for README
@@ -58,15 +48,15 @@ function generateMarkdown(data) {
   ${data.usage}
  
   ## License
-  ${data.license}
-  ${renderLicenseBadge(data.license)}
+  ${data.license}\n
+  ${renderLicenseBadge(data.license)}\n
   ${renderLicenseLink(data.license)}
 
   ## Contribution
   ${data.contribution}
 
   ## Tests
-
+  ${data.tests}
 
   ## Questions? Contact me at:
   * GitHub: ${data.gitHub}

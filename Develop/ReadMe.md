@@ -1,4 +1,4 @@
-# test
+# Testing
 
   # Table of Contents
 
@@ -11,25 +11,27 @@
   * [Questions](#questions)
 
   ## Description
-  t
+  Readme generator
   
   ## Installation
   undefined
   
   ## Usage
-  t
+  use to generate a good read me file
  
   ## License
-  MIT
-  ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-  
+  MIT,ISC
+
+  ![License: MIT,ISC](https://img.shields.io/badge/License-MIT,ISC-blue.svg)
+
+  (https://opensource.org/licenses/MIT,ISC)
 
   ## Contribution
-  t
+  Me, Myself, and Irene
 
   ## Tests
-
+  test away
 
   ## Questions? Contact me at:
-  * GitHub: t
-  * Email: t
+  * GitHub: git/h
+  * Email: hrkoren@gmail.com
