@@ -1,4 +1,4 @@
-# Testing
+# Readme Generator
 
   # Table of Contents
 
@@ -11,27 +11,27 @@
   * [Questions](#questions)
 
   ## Description
-  Readme generator
+  This is a quick and simple auto-generator to create readme markdown files.
   
   ## Installation
   undefined
   
   ## Usage
-  use to generate a good read me file
+  After installing all needed node package manager files, you can use this program to create readme files.
  
   ## License
-  MIT,ISC
+  MIT
 
-  ![License: MIT,ISC](https://img.shields.io/badge/License-MIT,ISC-blue.svg)
+  ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
-  (https://opensource.org/licenses/MIT,ISC)
+  (https://opensource.org/licenses/MIT)
 
   ## Contribution
-  Me, Myself, and Irene
+  Help from my tutor to finish a few pieces and clean up code.
 
   ## Tests
-  test away
+  No testing criteria at this time.
 
   ## Questions? Contact me at:
-  * GitHub: git/h
+  * GitHub: github.com/hrkoren
   * Email: hrkoren@gmail.com
