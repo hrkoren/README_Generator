@@ -22,7 +22,10 @@ In order to use this generator, you must:
 ## Usage
 --------------------------------------------------------------------------------------------------------------------------------------------------
 This program can be used with permission to auto-generate a Readme markdown file. Watch the video to see how the program works.
-![Animated Gif](./Images/Readme_Generator.gif)
+![Animated Gif](./Images/Readme_Generator.gif)\
+<video width="320" height="240" controls>
+  <source src="./Images/Readme_Gen_Video.mp4" type="video/mp4">
+</video>
 
 ## License
 --------------------------------------------------------------------------------------------------------------------------------------------------
