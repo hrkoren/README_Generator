@@ -1,4 +1,4 @@
-# Readme Generator
+# README Generator
 
   # Table of Contents
 
@@ -11,13 +11,13 @@
   * [Questions](#questions)
 
   ## Description
-  This is a quick and simple auto-generator to create readme markdown files.
+  This is a Readme Generator that uses node.js and allows users to quickly auto-generate a markdown file for their projects.
   
   ## Installation
-  undefined
+  Install npm, install Inquirer, then open index.js in either Git Bash or VS terminal. Run 'node index.js' and follow the prompts.
   
   ## Usage
-  After installing all needed node package manager files, you can use this program to create readme files.
+  Answer each prompt to create the readme file.
  
   ## License
   MIT
@@ -27,10 +27,10 @@
   (https://opensource.org/licenses/MIT)
 
   ## Contribution
-  Help from my tutor to finish a few pieces and clean up code.
+  Thank you to my tutor for showing me an easier way to render the license information.
 
   ## Tests
-  No testing criteria at this time.
+  Each prompt has a validation if no data has been entered.
 
   ## Questions? Contact me at:
   * GitHub: github.com/hrkoren

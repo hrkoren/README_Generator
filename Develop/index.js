@@ -21,6 +21,12 @@ inquirer
         },
         {
             type: 'input',
+            message: 'Enter Installation Information',
+            name: 'installation',
+            validate: (value) => { if (value) { return true } else { return 'Please enter installation information.' } },
+        },
+        {
+            type: 'input',
             message: 'Enter the Usage Parameters',
             name: 'usage',
             validate: (value) => { if (value) { return true } else { return 'Please enter the parameters for usage.' } },
